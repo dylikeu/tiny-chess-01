@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/tiny-chess-01/dylikeu/tiny-chess-01/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 [![reward](https://make.fun/badge/tiny-chess-01/dylikeu/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-A chess engine in 4,096 bytes of Python: negamax with alpha-beta, transposition table, quiescence, null-move pruning, late-move reductions, killer and history ordering, and piece-square evaluation. It plays the house gauntlet through the make.fun env, searching to a fixed node budget per move so every trial replays identically.
+A 4,096-byte Python chess engine: a 0x88 board with incremental material and tapered piece-square evaluation, alpha-beta search with quiescence, a transposition table and killer-move ordering, deepened iteratively to a fixed 50,000 nodes per move. Practice trials on the make.fun gauntlet: Elo 1,364 / 1,545 / 1,654 (mean 1,521), above the sunfish house baseline (~1,365).
 
 ## Run it
 
@@ -14,4 +14,4 @@ MAKEFUN_ENV_URL=http://127.0.0.1:8080 python3 main.py
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?ref=ec115nvc&utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
+Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards
